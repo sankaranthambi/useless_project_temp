@@ -1,26 +1,27 @@
 <img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# GAMBLE CALCULATOR 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: Chethi Mantharam Thulasi
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead: Aibel P Shiju - College of Engineering Poonjar
+- Member 2: Harikrishna E S - College of Engineering Poonjar
+
 
 ### Project Description
-[2-3 lines about what your project does]
+Gamble Calculator turns boring math into a chaotic gacha adventure — you enter numbers you want to calculate, spin a fiery roulette of fate, and pray to the gods for a correct answer. Cheat codes (like Ashik,Manu etc) summon power-up banners, boost (or curse) your luck, and every spin comes with over-the-top reactions worthy of a legendary pull.
+Have something to calculate ? u better be lucky.
 
-### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+### The Problem 
+Math is too reliable — calculators always give correct answers
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+Replace boring, accurate calculators with Gamble Calculathor — a gacha-fueled math machine where every calculation is decided by a flaming probability spinner, cheat codes, and pure luck, ensuring that even simple math feels like rolling for a 5-star hero.
 
 ## Technical Details
 ### Technologies/Components Used
