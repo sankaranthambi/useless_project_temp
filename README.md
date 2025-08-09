@@ -16,6 +16,7 @@
 ### Project Description
 Gamble Calculator turns boring math into a chaotic gacha adventure — you enter numbers you want to calculate, spin a fiery roulette of fate, and pray to the gods for a correct answer. Cheat codes (like Ashik,Manu etc) summon power-up banners, boost (or curse) your luck, and every spin comes with over-the-top reactions worthy of a legendary pull.
 Have something to calculate ? u better be lucky.
+cheat codes : ashik,manu,aibel,nirenjan,adithyan,sreenath,aswin
 
 ### The Problem 
 Math is too reliable — calculators always give correct answers
@@ -26,72 +27,58 @@ Replace boring, accurate calculators with Gamble Calculathor — a gacha-fueled 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
+- [Languages used]- HTML,CSS,TypeScript
+- [Frameworks used] - Next.js,React 
+- [Libraries used] - Framer Motion,React-Icons,Tailwind CSS,React-Toastify
+- [Tools used] - Vercel ,Git & GitHub, VS Code ,Loveable ai
 
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
+
 
 ### Implementation
 For Software:
+
 # Installation
-[commands]
+git clone https://github.com/sankaranthambi/useless_project_temp.git
+cd useless_project_temp
+npm install
 
 # Run
-[commands]
+npm run dev
+npm run build
+npm start
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1](Add screenshot 2 here with proper name)
+<img width="1828" height="852" alt="wrong answer with probability" src="https://github.com/user-attachments/assets/20ddcaf3-617a-4327-8cb0-df8cc56ea43b" />
+
+*This shows the result after losing the probability battle *
 
 ![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+<img width="1827" height="856" alt="correct answer epic pull" src="https://github.com/user-attachments/assets/22e61ff0-53d3-4fb8-83df-7dc0486e0293" />
+
+*This shows the result after winning the probability battle*
 
 ![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+<img width="1840" height="854" alt="Ashiks blessing" src="https://github.com/user-attachments/assets/d0a8bfd9-6f83-4181-86ac-97ab98c437dd" />
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
+*Probability Increase after using blessed cheat code "ashik"*
 
-For Hardware:
+![Screenshot3](Add screenshot 3 here with proper name)
+<img width="1849" height="862" alt="manu's curse" src="https://github.com/user-attachments/assets/2c037354-9838-4929-9164-f754aaf5f4fe" />
 
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
 
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
+*Probability decrease after using cursed cheat code "manu"*
 
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
 
-![Build](Add photos of build process here)
-*Explain the build steps*
 
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Aibel P Shiju: Idea and implementation
+- Harikrishna E S: Software Configuration
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
