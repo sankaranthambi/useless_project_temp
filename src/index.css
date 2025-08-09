@@ -1,0 +1,208 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Gacha Game Design System - Vibrant colors and dramatic effects */
+
+@layer base {
+  :root {
+    /* Main theme colors */
+    --background: 230 50% 8%;
+    --foreground: 50 100% 95%;
+
+    /* Gacha rarity colors */
+    --common: 120 20% 60%;
+    --common-foreground: 0 0% 0%;
+    
+    --rare: 200 80% 65%;
+    --rare-foreground: 0 0% 100%;
+    
+    --epic: 280 85% 70%;
+    --epic-foreground: 0 0% 100%;
+    
+    --legendary: 45 100% 65%;
+    --legendary-foreground: 0 0% 0%;
+    
+    --mythic: 15 100% 60%;
+    --mythic-foreground: 0 0% 100%;
+
+    /* UI Elements */
+    --card: 230 40% 12%;
+    --card-foreground: 50 100% 95%;
+
+    --popover: 230 40% 15%;
+    --popover-foreground: 50 100% 95%;
+
+    --primary: 280 85% 70%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 230 40% 20%;
+    --secondary-foreground: 50 100% 95%;
+
+    --muted: 230 20% 25%;
+    --muted-foreground: 50 30% 70%;
+
+    --accent: 45 100% 65%;
+    --accent-foreground: 0 0% 0%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 230 30% 25%;
+    --input: 230 40% 15%;
+    --ring: 280 85% 70%;
+
+    /* Gradients */
+    --gradient-legendary: linear-gradient(135deg, hsl(45, 100%, 65%), hsl(35, 100%, 55%));
+    --gradient-epic: linear-gradient(135deg, hsl(280, 85%, 70%), hsl(260, 85%, 60%));
+    --gradient-rare: linear-gradient(135deg, hsl(200, 80%, 65%), hsl(220, 80%, 55%));
+    --gradient-common: linear-gradient(135deg, hsl(120, 20%, 60%), hsl(100, 20%, 50%));
+    --gradient-background: linear-gradient(135deg, hsl(230, 50%, 8%), hsl(250, 40%, 12%));
+    --gradient-fire: linear-gradient(45deg, hsl(15, 100%, 60%), hsl(35, 100%, 70%), hsl(45, 100%, 65%));
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    background: var(--gradient-background);
+    min-height: 100vh;
+  }
+}
+
+@layer components {
+  /* Gacha Button Variants */
+  .btn-legendary {
+    @apply bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl;
+    background: var(--gradient-legendary);
+  }
+  
+  .btn-epic {
+    @apply text-white font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-purple-500/50;
+    background: var(--gradient-epic);
+  }
+  
+  .btn-rare {
+    @apply text-white font-bold shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-blue-500/50;
+    background: var(--gradient-rare);
+  }
+  
+  .btn-common {
+    @apply text-black font-bold shadow-lg transform transition-all duration-300 hover:scale-105;
+    background: var(--gradient-common);
+  }
+
+  /* Spinner wheel styles */
+  .spinner-wheel {
+    @apply relative rounded-full border-8 border-yellow-400 shadow-2xl;
+    background: conic-gradient(
+      from 0deg,
+      hsl(var(--legendary)) 0deg 36deg,
+      hsl(var(--epic)) 36deg 72deg,
+      hsl(var(--rare)) 72deg 144deg,
+      hsl(var(--common)) 144deg 360deg
+    );
+  }
+
+  /* Flame animation */
+  @keyframes flame {
+    0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
+    50% { transform: scale(1.1) rotate(2deg); opacity: 1; }
+  }
+  
+  .flame-effect {
+    animation: flame 0.5s ease-in-out infinite alternate;
+  }
+
+  /* Dramatic spin animation */
+  @keyframes dramaticSpin {
+    0% { transform: rotate(0deg); }
+    70% { transform: rotate(1800deg); }
+    100% { transform: rotate(1980deg); }
+  }
+  
+  .dramatic-spin {
+    animation: dramaticSpin 3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  /* Pulse glow effect */
+  @keyframes pulseGlow {
+    0%, 100% { box-shadow: 0 0 20px hsl(var(--primary)); }
+    50% { box-shadow: 0 0 40px hsl(var(--primary)), 0 0 60px hsl(var(--primary)); }
+  }
+  
+  .pulse-glow {
+    animation: pulseGlow 2s ease-in-out infinite;
+  }
+
+  /* Result popup animation */
+  @keyframes resultPopup {
+    0% { transform: scale(0) rotate(180deg); opacity: 0; }
+    50% { transform: scale(1.2) rotate(0deg); opacity: 1; }
+    100% { transform: scale(1) rotate(0deg); opacity: 1; }
+  }
+  
+  .result-popup {
+    animation: resultPopup 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+}
